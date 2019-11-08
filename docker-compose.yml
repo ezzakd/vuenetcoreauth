@@ -1,0 +1,9 @@
+version: '3.4'
+
+services:
+  authexample:
+    image: ${DOCKER_REGISTRY-}authexample
+    build:
+      context: .
+      dockerfile: authExample/Dockerfile
+    container_name: authexample
